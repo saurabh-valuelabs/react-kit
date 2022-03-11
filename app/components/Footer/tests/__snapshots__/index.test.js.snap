@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> Should render and match the snapshot 1`] = `
+<footer>
+  <hr />
+  <div
+    class="row"
+  >
+    <div
+      class="col"
+    />
+    <div
+      class="col-auto"
+    >
+      <button
+        aria-label="Back To Top"
+        class="btn btn-link"
+        type="button"
+      >
+        <span>
+          Back To Top
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-12 col-md-4 col-lg-2"
+    >
+      <h4>
+        About Us
+      </h4>
+      <ul
+        class="nav"
+      >
+        <li
+          class="nav-item"
+        >
+          <a
+            class="px-0 nav-link"
+            to="/privacy-policy"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="px-0 nav-link"
+            to="/list"
+          >
+            Term and Condition
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+`;

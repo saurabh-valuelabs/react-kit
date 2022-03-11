@@ -1,0 +1,7 @@
+{
+  "app.components.ActionBlock.header": "This is the ActionBlock component!",
+  "app.components.Footer.backToTop": "Back To Top",
+  "app.components.Footer.backToTop2": "Back To Top1",
+  "app.components.TestComp.header": "This is the TestComp component!",
+  "app.components.TestComp.myButton": "My Button"
+}

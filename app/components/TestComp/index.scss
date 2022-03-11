@@ -1,0 +1,22 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+/* Assuming that --small, --medium and --large are defined in styles folder file */
+
+@import 'css/default.scss';
+
+@include small {
+  @import 'css/small.scss';
+}
+
+@include medium {
+  @import 'css/medium.scss';
+}
+
+@include large {
+  @import 'css/large.scss';
+}
+
+@include xlarge {
+  @import 'css/xlarge.scss';
+}

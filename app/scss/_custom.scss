@@ -1,0 +1,118 @@
+// Here you can add other styles
+
+.logo-img {
+  height: 80%;
+  margin: 0 auto;
+}
+
+.brand-minimized .app-header .navbar-brand {
+  width: auto !important;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-middle {
+  vertical-align: middle;
+}
+
+.app-header .navbar-brand {
+  width: auto;
+  padding-left: 1rem;
+}
+
+.max-height1 {
+  max-height: 45px;
+  min-height: 45px;
+}
+
+@media (min-width: 60rem) {
+  .max-height1 {
+    max-height: 95px;
+  }
+}
+
+.mandatory {
+
+  &:after {
+    content: '*';
+    color: red;
+  }
+}
+
+.square-logo {
+  max-width: 200px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.rbt {
+  width: calc(100%);
+
+  .rbt-menu {
+    width: 100%;
+  }
+}
+
+.sidebar-minimized .sidebar {
+  .info {
+    display: none;
+  }
+
+  .nav>.nav-dropdown>.nav-dropdown-items {
+    .nav-dropdown-items {
+      .nav-link {
+        padding-left: 30px;
+      }
+    }
+
+    .nav-link {
+      padding-left: 0px;
+    }
+  }
+}
+
+.sidebar {
+
+  .sidebar-minimizer {
+    position: fixed;
+    width: $sidebar-width;
+    height: 50px;
+    bottom: 0;
+  }
+
+  .nav-dropdown.open>.nav-dropdown-items {
+    .nav-dropdown-items {
+      .nav-link {
+        padding-left: 60px;
+      }
+    }
+
+    .nav-link {
+      padding-left: 30px;
+
+
+    }
+  }
+}
+
+.paginationOpts__root {
+  span {
+    padding-right: 30px;
+  }
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+}

@@ -1,0 +1,25 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+@import '~draft-js/dist/Draft.css';
+@import '~react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+@import '~react-bootstrap-typeahead/css/Typeahead.css';
+
+/* Assuming that --small, --medium and --large are defined in styles folder file */
+
+@import 'css/default.scss';
+
+@include small {
+  @import 'css/small.scss';
+}
+
+@include medium {
+  @import 'css/medium.scss';
+}
+
+@include large {
+  @import 'css/large.scss';
+}
+
+@include xlarge {
+  @import 'css/xlarge.scss';
+}

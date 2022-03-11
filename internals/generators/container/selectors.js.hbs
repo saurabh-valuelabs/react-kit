@@ -1,0 +1,39 @@
+import { createSelector } from 'reselect';
+import { initialState } from './initialState';
+
+/**
+* Direct selector to the {{ camelCase name }} state domain
+*/
+
+const select{{ properCase name }}Domain = state => state.{{ camelCase name }} || initialState;
+
+/**
+* Other specific selectors
+*/
+
+/**
+* Default selector used by {{ properCase name }}
+*/
+
+const makeSelect{{ properCase name }} = () =>
+createSelector(select{{ properCase name }}Domain, substate => substate);
+
+const makeSelect{{ properCase name }}Loading = () =>
+createSelector(select{{ properCase name }}Domain, substate => substate.isLoading);
+
+const makeSelect{{ properCase name }}HasError = () =>
+createSelector(select{{ properCase name }}Domain, substate => substate.hasError);
+
+const makeSelect{{ properCase name }}Error = () =>
+createSelector(select{{ properCase name }}Domain, substate => substate.error);
+
+const makeSelect{{ properCase name }}MetaTitle = () =>
+createSelector(select{{ properCase name }}Domain, substate => substate.metaTitle);
+
+const makeSelect{{ properCase name }}MetaDescription = () =>
+createSelector(select{{ properCase name }}Domain, substate => substate.metaDescription);
+
+export default makeSelect{{ properCase name }};
+export { select{{ properCase name }}Domain, makeSelect{{ properCase name }}Loading,
+makeSelect{{ properCase name }}HasError, makeSelect{{ properCase name }}Error, makeSelect{{ properCase name }}MetaTitle,
+makeSelect{{ properCase name }}MetaDescription};

@@ -1,0 +1,64 @@
+{
+  "my_profile": {
+    "data": [{
+      "iUserId": "1",
+      "vUserName": "dummy",
+      "tPassword": "dummy",
+      "vName": "John Doe",
+      "vContact": "9876543210",
+      "vPhoto": "",
+      "tBio": "A Dummy User",
+      "eUserType": "ADMIN",
+      "eStatus": "NEW"
+    }]
+  },
+  "select_users": {
+    "data": [{
+        "iUserId": "1",
+        "vUserName": "dummy",
+        "tPassword": "dummy",
+        "vName": "John Doe",
+        "vContact": "9876543210",
+        "vPhoto": "",
+        "tBio": "A Dummy User",
+        "eUserType": "ADMIN",
+        "eStatus": "NEW"
+      },
+      {
+        "iUserId": "2",
+        "vUserName": "pseudo",
+        "tPassword": "pseudo",
+        "vName": "Super Man",
+        "vContact": "7654321098",
+        "vPhoto": "",
+        "tBio": "A Pseudo User",
+        "eUserType": "MANAGER",
+        "eStatus": "NEW"
+      },
+      {
+        "iUserId": "3",
+        "vUserName": "test",
+        "tPassword": "test",
+        "vName": "Fam Soe",
+        "vContact": "8765432109",
+        "vPhoto": "",
+        "tBio": "Another Dummy User",
+        "eUserType": "NORMAL",
+        "eStatus": "OLD"
+      }
+    ]
+  },
+  "login": {
+    "data": [{
+      "iUserId": "1",
+      "vUserName": "dummy",
+      "tPassword": "dummy",
+      "vName": "John Doe",
+      "vContact": "9876543210",
+      "vPhoto": "",
+      "tBio": "A Dummy User",
+      "eUserType": "ADMIN",
+      "eStatus": "NEW"
+    }]
+  }
+}

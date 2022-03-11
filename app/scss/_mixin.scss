@@ -1,0 +1,36 @@
+@mixin small {
+  @media (min-width: $small) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: $medium) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media (min-width: $xlarge) {
+    @content;
+  }
+}
+
+
+@mixin input-field($background, $border, $color) {
+  color: $color;
+  @include gradient-bg($background);
+  border-color: $border;
+
+  &:focus {
+    border-color: $primary;
+    box-shadow: inset 0 1px 1px rgba($primary, 0.075),
+      0 0 0 0.2rem rgba($primary, 0.25);
+  }
+}

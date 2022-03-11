@@ -1,0 +1,43 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+{{#if memo}}
+  import React, { memo } from 'react';
+{{else}}
+  import React from 'react';
+{{/if}}
+// import PropTypes from 'prop-types';
+
+{{#if wantMessages}}
+  import { FormattedMessage } from 'react-intl';
+  import messages from './messages';
+{{/if}}
+
+{{#if wantHelper}}
+  // import { defaultFunction } from './_helper';
+{{/if}}
+
+{{#if wantStyling}}
+  import './index.scss';
+{{/if}}
+
+function {{ properCase name }}() {
+return (
+<>
+  {{#if wantMessages}}
+    <FormattedMessage {...messages.header} />
+  {{/if}}
+</>
+);
+}
+
+{{ properCase name }}.propTypes = {};
+
+{{#if memo}}
+  export default memo({{ properCase name }});
+{{else}}
+  export default {{ properCase name }};
+{{/if}}

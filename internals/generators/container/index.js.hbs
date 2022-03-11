@@ -1,0 +1,114 @@
+/**
+*
+* {{properCase name }}
+*
+*/
+
+{{#if memo}}
+  import React, { memo } from 'react';
+{{else}}
+  import React from 'react';
+{{/if}}
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+
+{{#if wantActionsAndReducer}}
+  import { connect } from 'react-redux';
+  import { compose } from 'redux';
+  import { createStructuredSelector } from 'reselect';
+
+  import { useInjectReducer } from 'utils/injectReducer';
+
+  {{#if wantSaga}}
+    import { useInjectSaga } from 'utils/injectSaga';
+
+    import saga from './saga';
+  {{/if}}
+
+  import makeSelect{{properCase name}}, {
+  makeSelect{{properCase name}}Loading,
+  makeSelect{{properCase name}}HasError,
+  makeSelect{{properCase name}}Error,
+  makeSelect{{properCase name}}MetaTitle,
+  makeSelect{{properCase name}}MetaDescription
+  } from './selectors';
+
+  import reducer from './reducer';
+
+  import { defaultAction } from './actions';
+
+{{/if}}
+
+
+import LoadingIndicator from '../../components/LoadingIndicator';
+
+
+{{#if wantActionsAndReducer}}
+  export function {{ properCase name }}({ metaTitle, metaDescription, dDefaultAction, isLoading, hasError, error }) {
+{{else}}
+  export function {{ properCase name }}({ metaTitle, metaDescription }) {
+{{/if}}
+{{#if wantActionsAndReducer}}
+  useInjectReducer({ key: '{{ camelCase name }}', reducer });
+{{/if}}
+{{#if wantSaga}}
+  useInjectSaga({ key: '{{ camelCase name }}', saga });
+{{/if}}
+return (
+<>
+  <Helmet>
+    <title>{metaTitle}</title>
+    <meta name="description" content={metaDescription} />
+  </Helmet>
+  <h1>
+    {metaTitle}
+  </h1>
+  {{#if wantActionsAndReducer}}
+    <LoadingIndicator actionTypeProp={dDefaultAction} isLoading={isLoading} hasError={hasError} error={error} />
+  {{/if}}
+</>
+);
+}
+
+{{ properCase name }}.propTypes = {
+{{#if wantActionsAndReducer}}
+  dDefaultAction: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  hasError: PropTypes.bool.isRequired,
+  error: PropTypes.string,
+{{/if}}
+metaTitle: PropTypes.string.isRequired,
+metaDescription: PropTypes.string.isRequired,
+};
+
+{{#if wantActionsAndReducer}}
+  const mapStateToProps = createStructuredSelector({
+  {{ camelCase name }}: makeSelect{{properCase name}}(),
+  isLoading: makeSelect{{properCase name}}Loading(),
+  hasError: makeSelect{{properCase name}}HasError(),
+  error: makeSelect{{properCase name}}Error(),
+  metaTitle: makeSelect{{properCase name}}MetaTitle(),
+  metaDescription: makeSelect{{properCase name}}MetaDescription(),
+  });
+
+  function mapDispatchToProps(dispatch) {
+  return {
+  dDefaultAction: () => dispatch(defaultAction()),
+  };}
+{{/if}}
+
+{{#if wantActionsAndReducer}}
+  const withConnect = connect(mapStateToProps, mapDispatchToProps);
+  export default compose(
+  withConnect,
+  {{#if memo}}
+    memo,
+  {{/if}}
+  )(({{ properCase name }}));
+{{else}}
+  {{#if memo}}
+    export default memo(({{ properCase name }}));
+  {{else}}
+    export default ({{ properCase name }})
+  {{/if}}
+{{/if}}

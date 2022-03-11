@@ -1,0 +1,82 @@
+// stylelint-disable
+$border-radius: 0;
+
+$blue: red !default;
+$pink: #D9D9D9 !default;
+// $colors: () !default;
+// $colors: map-merge(("blue": $blue, "pink": $pink), $colors);
+$primary: $blue !default;
+// $secondary: $pink !default;
+// $light: $pink !default;
+// $dark: $blue !default;
+// $theme-colors: () !default;
+// $theme-colors: map-merge(("primary": $primary, "secondary": $secondary, "light": $light, "dark": $dark), $theme-colors);
+
+// $body-bg: #fff;
+// $footer-bg: #fff;
+// $body-color: $blue;
+
+// $border-color: $blue;
+// $input-border-color: $pink;
+
+
+
+// $sidebar-bg: $pink;
+// $sidebar-color: $blue;
+
+// $sidebar-nav-link-color: $blue;
+// $sidebar-nav-link-icon-color: $blue;
+// $sidebar-nav-link-bg: $pink;
+
+// $sidebar-nav-link-active-color: $pink;
+$sidebar-nav-link-active-icon-color: $pink;
+// $sidebar-nav-link-active-bg: $blue;
+
+// $sidebar-nav-link-hover-color: $pink;
+// $sidebar-nav-link-hover-icon-color: $pink;
+// $sidebar-nav-link-hover-bg: $blue;
+
+// $sidebar-nav-dropdown-color: $blue;
+// $sidebar-nav-dropdown-icon-color: $blue;
+// $sidebar-nav-dropdown-bg: $pink;
+
+// $sidebar-nav-dropdown-active-color: $pink;
+// $sidebar-nav-dropdown-active-icon-color: $pink;
+// $sidebar-nav-dropdown-active-bg: $blue;
+
+// $sidebar-nav-dropdown-hover-color: $pink;
+// $sidebar-nav-dropdown-hover-icon-color: $pink;
+// $sidebar-nav-dropdown-hover-bg: $blue;
+
+// $sidebar-nav-link-disabled-color: $pink;
+// $sidebar-nav-dropdown-indicator-color: $blue;
+
+// $card-border-color: $blue;
+// $card-cap-bg: $blue;
+// $input-placeholder-color: $blue;
+
+
+// containers
+// default 375px to 479 px -Mobile portrait
+$small: 30rem; // Mobile Landscape 480px
+$medium: 44rem; // Tablet Portrait  720px
+$large: 60rem; // Tablet Landscape and small Laptops 960px
+$xlarge: 80rem; // Standard Laptop, Desktop etc.. 1280px
+
+$grid-breakpoints: (xs: 0,
+  sm: $small,
+  md: $medium,
+  lg: $large,
+  xl: $xlarge,
+);
+
+$container-max-widths: (sm: 28rem,
+  md: 45rem,
+  lg: 58rem,
+  xl: 70rem,
+);
+
+
+// $border-radius: 0;
+
+$sidebar-width: 250px;

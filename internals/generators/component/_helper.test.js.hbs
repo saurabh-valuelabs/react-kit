@@ -1,0 +1,10 @@
+import { defaultFunction } from '../_helper';
+
+describe('{{ properCase name }} helpers', () => {
+  describe('Default Helper Function', () => {
+    it('returns the expected value', () => {
+      const expected = 'Sample Text';
+      expect(defaultFunction('Sample Text')).toEqual(expected);
+    });
+  });
+});

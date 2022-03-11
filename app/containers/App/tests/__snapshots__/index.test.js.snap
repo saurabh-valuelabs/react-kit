@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> Should render and match the snapshot 1`] = `
+<div
+  class="container"
+>
+  <header>
+    <nav
+      class="row px-0 navbar navbar-expand-lg navbar"
+    >
+      <div
+        class="col-6 col-lg-auto"
+      >
+        <a
+          class="navbar-brand"
+          to="/"
+        >
+          <img
+            alt="NepalFranchise"
+            src=""
+          />
+        </a>
+      </div>
+      <div
+        class="lg-hide col-12"
+      >
+        <button
+          aria-hidden="true"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          type="button"
+        >
+          <span
+            class="navbar-toggler-icon"
+          />
+        </button>
+      </div>
+      <div
+        class="col"
+      >
+        <div
+          class="collapse navbar-collapse"
+        >
+          <ul
+            class="navbar-nav"
+          >
+            <li
+              class="nav-item"
+            >
+              <a
+                class="nav-link"
+                title="Dashboard"
+                to="/"
+              >
+                Dashboard
+              </a>
+            </li>
+            <li
+              class="nav-item"
+            >
+              <a
+                class="nav-link"
+                title="Funds Listing"
+                to="/fund-listing"
+              >
+                Funds Listing
+              </a>
+            </li>
+            <li
+              class="nav-item"
+            >
+              <a
+                class="nav-link"
+                title="My Profile"
+                to="/my-profile"
+              >
+                My Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    div
+  </main>
+  <footer>
+    <hr />
+    <div
+      class="row"
+    >
+      <div
+        class="col"
+      />
+      <div
+        class="col-auto"
+      >
+        <button
+          aria-label="Back To Top"
+          class="btn btn-link"
+          type="button"
+        >
+          <span>
+            Back To Top
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="col-12 col-md-4 col-lg-2"
+      >
+        <h4>
+          About Us
+        </h4>
+        <ul
+          class="nav"
+        >
+          <li
+            class="nav-item"
+          >
+            <a
+              class="px-0 nav-link"
+              to="/privacy-policy"
+            >
+              Privacy Policy
+            </a>
+          </li>
+          <li
+            class="nav-item"
+          >
+            <a
+              class="px-0 nav-link"
+              to="/list"
+            >
+              Term and Condition
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Routes /> Should render and match the snapshot 1`] = `
+<main>
+  div
+</main>
+`;

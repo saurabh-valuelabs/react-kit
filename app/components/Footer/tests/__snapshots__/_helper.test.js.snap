@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation helpers Default Helper Function returns the expected value 1`] = `
+<div
+  class="col-12 col-md-4 col-lg-2"
+>
+  <h4>
+    About Us
+  </h4>
+  <ul
+    class="nav"
+  >
+    <li
+      class="nav-item"
+    >
+      <a
+        class="px-0 nav-link"
+        to="/privacy-policy"
+      >
+        Privacy Policy
+      </a>
+    </li>
+    <li
+      class="nav-item"
+    >
+      <a
+        class="px-0 nav-link"
+        to="/list"
+      >
+        Term and Condition
+      </a>
+    </li>
+  </ul>
+</div>
+`;
