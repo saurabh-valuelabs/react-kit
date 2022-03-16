@@ -37,6 +37,6 @@ ValueLabs React Bolierplate with Redux, Saga, Sass, Multilingual and Testing Sup
 ### Build
 
 1. install node v12 and npm
-2. install git cli <github-url>
-   git clone ssh://git@github.com/[username]/[repository-name].git
-3. GIT <github-url>
+2. install git cli https://github.com/saurabh-valuelabs/react-kit
+   git clone git@github.com:saurabh-valuelabs/react-kit.git
+3. GIT https://github.com/saurabh-valuelabs/react-kit
